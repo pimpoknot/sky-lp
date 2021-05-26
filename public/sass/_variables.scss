@@ -1,0 +1,20 @@
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+    --black-primary: #363636;
+    --grey-500:#93989C;
+    --grey-100: #B1B6B9;
+    --orange-50: #906B58;
+    --orange-600: #AE562E; 
+}
+
+.d-flex {display: flex;}
+.justify-content {justify-content: center;}
+.align-items {align-items: center;}
+.wrap {flex-wrap: wrap;}
+.mt{margin-top: 1rem;}

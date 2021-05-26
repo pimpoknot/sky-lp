@@ -1,0 +1,506 @@
+@charset "UTF-8";
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.glide * {
+  box-sizing: inherit;
+}
+.glide__track {
+  overflow: hidden;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+.glide__slides--dragging {
+  user-select: none;
+}
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.glide__arrows {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide__bullets {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --black-primary: #363636;
+  --grey-500:#93989C;
+  --grey-100: #B1B6B9;
+  --orange-50: #906B58;
+  --orange-600: #AE562E;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.headerContainer {
+  height: 90vh;
+  background-image: url("/public/img/background-header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.headerContainer .logoContainter {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 250px;
+  height: 330px;
+}
+.headerContainer h1 {
+  color: var(--orange-600);
+}
+.headerContainer .formContainer {
+  background: white;
+  width: 53rem;
+  padding: 1.25rem;
+  position: absolute;
+  bottom: -1.25rem;
+}
+.headerContainer .formContainer p {
+  margin-bottom: 1rem;
+  color: #707070;
+}
+.headerContainer .formContainer form {
+  display: flex;
+  align-items: center;
+}
+.headerContainer .formContainer form input {
+  padding: 0.25rem;
+  margin-left: 1rem;
+  border: none;
+  height: 2.55rem;
+  border-bottom: 1px solid var(--grey-500);
+  width: 230px;
+}
+.headerContainer .formContainer form button {
+  margin-left: 1.25rem;
+  background: var(--orange-600);
+  width: 2.22rem;
+  border-radius: 49%;
+  height: 2.22rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  background-image: url("/public/img/seta.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.headerContainer .formContainer form button:hover {
+  filter: brightness(0.8);
+}
+.headerContainer .formContainer .radioButton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.25rem;
+  margin-top: 1.1rem;
+}
+.headerContainer .formContainer .radioButton input {
+  margin-right: 0.25rem;
+}
+.headerContainer .formContainer .radioButton p {
+  margin: 0;
+  margin-right: 0.25rem;
+  font-size: 0.88rem;
+  color: #707070;
+}
+.headerContainer .formContainer .radioButton span {
+  color: var(--orange-600);
+  font-weight: bold;
+  font-size: 1rem;
+  font-size: 0.88rem;
+}
+
+.informationContainer {
+  background: #333;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 13rem;
+}
+.informationContainer .studio {
+  background-color: #333;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.66rem;
+}
+.informationContainer .studio p {
+  color: white;
+  font-size: 1rem;
+  margin-left: 0.66rem;
+  font-weight: bold;
+  margin-left: 1.25rem;
+}
+
+.immobile-highlights {
+  margin-top: 5rem;
+  position: relative;
+  height: 1028px;
+}
+.immobile-highlights .highlights-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+.immobile-highlights .highlights-container .highlightsImage-container {
+  position: relative;
+  margin: 0 auto;
+}
+.immobile-highlights .highlights-container .highlightsImage-container .img1 {
+  box-shadow: 0px 8px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.immobile-highlights .highlights-container .highlightsImage-container .img2 {
+  width: 100%;
+  background-image: url("/public/img/Retângulo 342.png");
+  position: absolute;
+  right: -6.55rem;
+  bottom: -5rem;
+}
+.immobile-highlights .highlights-container .highlightsText-container {
+  margin: 0 auto;
+}
+.immobile-highlights .highlights-container .highlightsText-container h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #363636;
+  position: relative;
+}
+.immobile-highlights .highlights-container .highlightsText-container h2::after {
+  content: "";
+  position: absolute;
+  width: 12%;
+  height: 2px;
+  background: var(--orange-600);
+  bottom: 0;
+  left: 0;
+}
+.immobile-highlights .highlights-container .highlightsText-container .text-1 {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+.immobile-highlights .highlights-container .highlightsText-container p {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.immobile-highlights .highlights-container .highlightsMap-container {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+.immobile-highlights .highlights-container .highlightsMap-container p {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+.immobile-highlights .highlights-container .mapButton {
+  margin-top: 10rem;
+  width: 100%;
+  position: relative;
+}
+.immobile-highlights .highlights-container .mapButton::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 2px;
+  background: #363636;
+  bottom: -15px;
+  left: 0;
+}
+.immobile-highlights .highlights-container .mapButton a {
+  width: 100%;
+  color: #363636;
+  font-weight: medium;
+  position: relative;
+  text-decoration: none;
+  transition: filter 0.3s;
+}
+.immobile-highlights .highlights-container .mapButton a:hover {
+  filter: brightness(0.1);
+}
+
+.immobiles-slider {
+  padding: 1rem;
+  position: relative;
+  background: #363636;
+}
+.immobiles-slider .container {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 90%;
+}
+.immobiles-slider .container .slider-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  margin-left: 2.25rem;
+}
+.immobiles-slider .container .slider-content h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  position: relative;
+  line-height: 2.55rem;
+}
+.immobiles-slider .container .slider-content h2 span {
+  position: relative;
+}
+.immobiles-slider .container .slider-content h2 span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--orange-600);
+}
+.immobiles-slider .container .slider-content p {
+  margin-top: 1.25rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.immobiles-slider .container .slider-content button {
+  margin-top: 3rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  background: #AE562E;
+  border: none;
+  border-radius: 50%;
+}
+.immobiles-slider .container .slider-content button + button {
+  margin-left: 1.25rem;
+}
+.immobiles-slider .container .slider-content .btn {
+  background-image: url("/public/img/seta.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  transition: filter 0.3s;
+}
+.immobiles-slider .container .slider-content .btn:hover {
+  filter: brightness(0.8);
+}
+.immobiles-slider .container .slider-content .btn1 {
+  background-image: url("/public/img/seta-back.svg");
+}
+.immobiles-slider .container .sliderContainer {
+  width: 80%;
+  height: 100%;
+  margin: 0 1rem;
+}
+.immobiles-slider .container .sliderContainer .slider-images {
+  position: relative;
+  width: 500px;
+  height: 578px;
+  overflow: hidden;
+  transition: width 2s;
+  background-image: url("/public/img/slider1.svg");
+}
+.immobiles-slider .container .sliderContainer .slider-images:hover {
+  filter: blur(2px);
+}
+.immobiles-slider .container .sliderContainer .slider-images:hover img {
+  width: 120%;
+}
+
+.recreationSection {
+  padding: 1.25rem;
+  position: relative;
+}
+.recreationSection .recreationArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.recreationSection .recreationArea .recreationSelect {
+  margin: 0 auto;
+  border: solid;
+  height: 100%;
+  max-width: 500px;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer .imageContainer1 {
+  background-image: url("/public/img/churrasco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer p {
+  width: 60%;
+  margin-left: 1rem;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer2 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer2 .imageContainer {
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer2 p {
+  width: 60%;
+  margin-left: 1rem;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer3 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer3 .imageContainer {
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer3 p {
+  width: 60%;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer4 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer4 .imageContainer {
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer4 p {
+  width: 60%;
+  margin-right: 1rem;
+}
+.recreationSection .recreationArea .recreationText {
+  margin: 0 auto;
+  position: relative;
+}
+.recreationSection .recreationArea .recreationText h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  position: relative;
+  color: #363636;
+}
+.recreationSection .recreationArea .recreationText h2::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  background: var(--orange-600);
+  bottom: 0;
+  left: 0;
+}
+.recreationSection .recreationArea .recreationText span {
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #363636;
+}
+.recreationSection .recreationArea .recreationText p {
+  margin-top: 2rem;
+  font-weight: lighter;
+  color: #161615;
+}
+.recreationSection .recreationArea .recreationText .more {
+  margin-top: 5rem;
+  width: 100%;
+  position: relative;
+}
+.recreationSection .recreationArea .recreationText .more::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 2px;
+  background: #363636;
+  bottom: -15px;
+  left: 0;
+  opacity: 0.7;
+}
+.recreationSection .recreationArea .recreationText .more a {
+  width: 100%;
+  color: #363636;
+  font-weight: medium;
+  position: relative;
+  text-decoration: none;
+  transition: filter 0.3s;
+}
+.recreationSection .recreationArea .recreationText .more a:hover {
+  filter: brightness(0.1);
+}
+
+/*# sourceMappingURL=style.css.map */

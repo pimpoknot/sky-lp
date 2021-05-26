@@ -1,0 +1,15 @@
+{
+  "name": "lp-sky",
+  "version": "1.0.0",
+  "description": "landing page criada pela Internit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Maverick",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "intl-tel-input": "^17.0.12"
+  }
+}

@@ -1,0 +1,103 @@
+.immobile-highlights {
+    margin-top: 5rem;
+    position: relative;
+    height: 1028px;
+
+    .highlights-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+        
+
+        .highlightsImage-container {
+            position: relative;
+            margin: 0 auto;
+          
+            .img1 {
+                box-shadow: 0px 8px 15px 1px rgba(0, 0, 0, 0.2);
+            }
+
+            .img2 {
+                width: 100%;
+                background-image: url('/public/img/Retângulo 342.png');
+                position: absolute;
+                right: -6.55rem;
+                bottom: -5rem;
+              
+            }
+
+            
+            
+        }
+
+        .highlightsText-container {
+            margin: 0 auto;
+            h2 {
+                font-size: 2.2rem;
+                font-weight: 400;
+                color: #363636;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 12%;
+                    height: 2px;
+                    background: var(--orange-600);
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            .text-1 {
+                font-size: 1.4rem;
+                margin-bottom: 3rem;
+                font-weight: 400;
+                line-height: 1.9rem;
+            }
+
+            p {
+                font-weight: lighter;
+                font-size: 1rem;
+            }
+        }
+        
+        .highlightsMap-container {
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-left: 1rem;
+                font-weight: bold;
+            }
+        }
+
+        .mapButton {
+            margin-top: 10rem;
+            width: 100%;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 95%;
+                height: 2px;
+                background: #363636;
+                bottom: -15px;
+                left: 0;
+            }
+            a {
+                width: 100%;
+                color: #363636;
+                font-weight: medium;
+                position: relative;
+                text-decoration: none;
+                transition: filter 0.3s;
+                &:hover {
+                    filter: brightness(0.1);
+                }
+            }
+        }
+    }
+}

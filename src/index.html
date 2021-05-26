@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="/public/css/glide.core.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sky</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="headerContainer">
+        <div class="logoContainter">
+            <img src="/public/img/logo.svg" alt="">
+        </div>
+        <!-- Form Header -->
+        <div class="formContainer">
+            <p>Para mais informações, preencha o formulário abaixo</p>
+            <form action="submit" class="form-js">
+                <input type="name" required name="Nome" placeholder="Nome*">
+                <input type="phone" required name="Telefone*" placeholder="Telefone*" id="phone">
+                <input type="email"required name="email" placeholder="E-mail*">
+                <button type="submit" id="btn-form1" onclick=""></button>
+            </form>
+            <div class="radioButton">
+                <input type="radio" name="" id="checkbox" required>
+                <p>Li e aceito o termo e a </p>
+                <span> Politica de Privacidade.*</span>
+            </div>
+        </div>
+    </div>
+    <!-- Container de informações -->
+    <div class="informationContainer">
+        <div class="studio">
+            <img src="/public/img/Grupo 341.svg" alt="">
+            <p>Studios<br> com vista privilegiada</p>
+        </div>
+        <div class="studio">
+            <img src="/public/img/quadrado.svg" alt="">
+            <p> 25 a 31m²s<br>studios</p>
+        </div>
+        <div class="studio">
+            <img src="/public/img/Grupo 342.svg" alt="">
+            <p>Área de lazer <br> com 2 opções de piscina</p>
+        </div>
+        <div class="studio">
+            <img src="/public/img/Grupo 343.svg" alt="">
+            <p>A 5 min.<br>  do metrô Clínicas</p>
+        </div>
+    </div>
+    <!-- Immobiles Highlights -->
+    <section class="immobile-highlights">
+        <div class="highlights-container">
+            <div class="highlightsImage-container">
+                <div class="img1">
+                    <img src="/public/img/highlights1.svg" alt="">
+                </div>
+                <div class="img2">
+                    <img src="/public/img/highligths2.svg" alt="">
+                </div>
+            </div>
+            <div class="highlightsText-container">
+                <h2>SKY Pinheiros</h2>
+                <p class="text-1">Imponente como deveria ser.</p>
+                <p>
+                    Viva o ponto alto de São Paulo. Um ponto de referência onde você se<br>
+                    conecta com toda a cidade. Pinheiros tem mobilidade, variedade de<br>
+                    comércio e lazer. São Studios de alto padrão de 25m² a 31 m², com<br>
+                    diversas opções de lazer. 
+                </p>
+
+                <div class="highlightsMap-container">
+                    <img src="/public/img/Grupo 67.svg" alt="">
+                    <p>Rua Arruda Alvim, nº180, Pinheiros - SP</p>
+                </div>
+
+                <div class="mapButton">
+                    <a href="#">Ver no mapa -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider de Imóveis -->
+    <section class="immobiles-slider">
+        <div class="container">
+            <div class="slider-content">
+                <h2><span>Um</span> toque de<br> sofisticação</h2>
+                <p>Cada detalhe é uma<br> nova experiência.</p>
+                <div class="button-container" data-glide-el="controls">
+                    <button data-glide-dir="<<" class="btn btn1"></button>
+                    <button data-glide-dir=">>" class="btn btn2"></button>
+                </div>
+            </div>
+            <div class="sliderContainer">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="slider-images">
+                              <img src="/public/img/slider1.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="slider-images">
+                                <img src="/public/img/slider2.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="slider-images">
+                                <img src="/public/img/slider2.svg" alt="">
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Area de Lazer -->
+    <section class="recreationSection">
+        <div class="recreationArea">
+            <div class="recreationSelect">
+                <div class="d-flex justify-content align-items wrap mt">
+                    <div class="recreationContainer">
+                        <div class="imageContainer1"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer2">
+                        <div class="imageContainer"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer3 mt">
+                        <div class="imageContainer"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer4 mt">
+                        <div class="imageContainer"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recreationText">
+                <h2> Área de Lazer</h2>
+                <span>Tudo pensado para o dia a dia.</span>
+                <p>
+                    O Sky Pinheiros oferece uma área de lazer repleta de<br>
+                    opções para você aproveitar da melhor maneira e com<br>
+                    muito conforto. Sinta-se em um clube com piscina,<br>
+                    salão de jogos, espaço gourmet e muito mais.<br>
+                    Conheça o Sky e viva o ponto mais alto de São Paulo.
+                </p>
+
+                <div class="more">
+                    <a href="#">Ver mais -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>
+    <script src="/public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 2
+        }
+        new Glide('.glide', config).mount()
+    </script>
+
+  
+</body>
+</html>
