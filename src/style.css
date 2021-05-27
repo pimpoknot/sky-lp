@@ -86,6 +86,10 @@
   margin-top: 1rem;
 }
 
+.active {
+  background: var(--orange-600) !important;
+}
+
 .headerContainer {
   height: 90vh;
   background-image: url("/public/img/background-header.png");
@@ -354,17 +358,18 @@
 }
 .immobiles-slider .container .sliderContainer .slider-images {
   position: relative;
-  width: 500px;
-  height: 578px;
+  height: 678px;
   overflow: hidden;
   transition: width 2s;
   background-image: url("/public/img/slider1.svg");
 }
 .immobiles-slider .container .sliderContainer .slider-images:hover {
   filter: blur(2px);
+  transition: 0.2s ease-in-out;
 }
 .immobiles-slider .container .sliderContainer .slider-images:hover img {
-  width: 120%;
+  z-index: 2;
+  width: 110%;
 }
 
 .recreationSection {
@@ -379,7 +384,6 @@
 }
 .recreationSection .recreationArea .recreationSelect {
   margin: 0 auto;
-  border: solid;
   height: 100%;
   max-width: 500px;
 }
@@ -390,10 +394,10 @@
   align-items: center;
 }
 .recreationSection .recreationArea .recreationSelect .recreationContainer .imageContainer1 {
-  background-image: url("/public/img/churrasco.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("/public/img/churrasco.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 55%;
   width: 30%;
   height: 100%;
   background: #333;
@@ -408,7 +412,10 @@
   display: flex;
   align-items: center;
 }
-.recreationSection .recreationArea .recreationSelect .recreationContainer2 .imageContainer {
+.recreationSection .recreationArea .recreationSelect .recreationContainer2 .imageContainer2 {
+  background-image: url("/public/img/onda.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   width: 30%;
   height: 100%;
   background: #333;
@@ -422,15 +429,18 @@
   height: 4rem;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
 }
-.recreationSection .recreationArea .recreationSelect .recreationContainer3 .imageContainer {
+.recreationSection .recreationArea .recreationSelect .recreationContainer3 .imageContainer3 {
+  background-image: url("/public/img/raquete.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   width: 30%;
   height: 100%;
   background: #333;
 }
 .recreationSection .recreationArea .recreationSelect .recreationContainer3 p {
   width: 60%;
+  margin-left: 1rem;
 }
 .recreationSection .recreationArea .recreationSelect .recreationContainer4 {
   width: 50%;
@@ -438,14 +448,107 @@
   display: flex;
   align-items: center;
 }
-.recreationSection .recreationArea .recreationSelect .recreationContainer4 .imageContainer {
+.recreationSection .recreationArea .recreationSelect .recreationContainer4 .imageContainer4 {
+  background-image: url("/public/img/cozinha.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   width: 30%;
   height: 100%;
   background: #333;
 }
 .recreationSection .recreationArea .recreationSelect .recreationContainer4 p {
   width: 60%;
-  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer5 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer5 .imageContainer5 {
+  background-image: url("/public/img/bicicleta.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer5 p {
+  width: 60%;
+  margin-left: 1rem;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer6 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer6 .imageContainer6 {
+  background-image: url("/public/img/camera.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer6 p {
+  width: 60%;
+  margin-left: 1rem;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer7 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer7 .imageContainer7 {
+  background-image: url("/public/img/pc.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer7 p {
+  width: 60%;
+  margin-left: 1rem;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer8 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer8 .imageContainer8 {
+  background-image: url("/public/img/onda.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer8 p {
+  width: 60%;
+  margin-left: 1rem;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer9 {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer9 .imageContainer9 {
+  background-image: url("/public/img/drink.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 30%;
+  height: 100%;
+  background: #333;
+}
+.recreationSection .recreationArea .recreationSelect .recreationContainer9 p {
+  width: 60%;
+  margin-left: 1rem;
 }
 .recreationSection .recreationArea .recreationText {
   margin: 0 auto;
@@ -501,6 +604,188 @@
 }
 .recreationSection .recreationArea .recreationText .more a:hover {
   filter: brightness(0.1);
+}
+
+.enterprise-planSection .enterprise-plan {
+  padding: 5rem;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText {
+  margin: 0 auto;
+  position: relative;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText h1 {
+  position: relative;
+  font-weight: lighter;
+  font-size: 2.25rem;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText h1::after {
+  content: "";
+  position: absolute;
+  width: 12%;
+  height: 3px;
+  background: var(--orange-600);
+  bottom: -2px;
+  left: 0;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText span {
+  font-weight: medium;
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText h2 {
+  margin-top: 3.25rem;
+  font-weight: lighter;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText h2 + h2 {
+  margin-top: 0.75rem;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText h2 + h2 + h2 {
+  font-weight: bold;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planText::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(110deg, white 70%, var(--orange-600) 20%);
+  width: 100%;
+  height: 3px;
+  bottom: 2rem;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planImage {
+  width: 379px;
+  height: 533px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  opacity: 0.5;
+  background-image: url("/public/img/planta1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planImage img {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  transition: 0.2s ease-in-out;
+}
+.enterprise-planSection .enterprise-plan .enterprise-planImage img:hover {
+  width: 60%;
+  left: 19%;
+  top: 25%;
+}
+
+.realizationSection {
+  padding: 2rem;
+  position: relative;
+  height: 665px;
+}
+.realizationSection .realization {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 6rem;
+  left: 30%;
+}
+.realizationSection .realization h2 {
+  font-weight: lighter;
+  font-size: 1.55rem;
+  color: #363636;
+  margin-bottom: 1rem;
+}
+.realizationSection .realization .realizationImages {
+  width: 635px;
+  display: flex;
+}
+.realizationSection .realization .realizationImages img {
+  width: 50%;
+  margin-left: 5rem;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  height: 660px;
+  position: relative;
+}
+.footer .footerContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+.footer .footerContainer .addressContainer {
+  margin: 0 auto;
+}
+.footer .footerContainer .addressContainer p {
+  font-size: 1.25rem;
+}
+.footer .footerContainer .formFooterContainer {
+  margin: 0 auto;
+  width: 660px;
+  position: relative;
+}
+.footer .footerContainer .formFooterContainer input {
+  height: 2.55rem;
+  padding: 0.25rem;
+  width: 100%;
+}
+.footer .footerContainer .formFooterContainer form {
+  display: flex;
+  align-items: center;
+  height: 239px;
+  width: 100%;
+}
+.footer .footerContainer .formFooterContainer form .formDiv1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.footer .footerContainer .formFooterContainer form .formDiv1 input + input {
+  margin-top: 1rem;
+}
+.footer .footerContainer .formFooterContainer form .formDiv2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  margin-left: 1rem;
+}
+.footer .footerContainer .formFooterContainer form .formDiv2 #text {
+  height: 100%;
+}
+.footer .footerContainer .formFooterContainer form .radioButton {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  position: relative;
+}
+.footer .footerContainer .formFooterContainer form .radioButton input {
+  width: 15px;
+  padding: 0;
+  margin: 0;
+}
+.footer .footerContainer .formFooterContainer form .radioButton p {
+  font-size: 0.8rem;
+  margin-left: 0.25rem;
+}
+.footer .footerContainer .formFooterContainer form .radioButton p span {
+  color: var(--orange-600);
+}
+.footer .footerContainer .formFooterContainer form #submit {
+  width: 15%;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

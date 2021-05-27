@@ -127,20 +127,40 @@
         <div class="recreationArea">
             <div class="recreationSelect">
                 <div class="d-flex justify-content align-items wrap mt">
-                    <div class="recreationContainer">
+                    <div class="recreationContainer recreationContainer">
                         <div class="imageContainer1"></div>
                         <p>Texto de lazer</p>
                     </div>
-                    <div class="recreationContainer2">
-                        <div class="imageContainer"></div>
+                    <div class="recreationContainer recreationContainer2">
+                        <div class="imageContainer2 active"></div>
                         <p>Texto de lazer</p>
                     </div>
-                    <div class="recreationContainer3 mt">
-                        <div class="imageContainer"></div>
+                    <div class="recreationContainer recreationContainer3 mt">
+                        <div class="imageContainer3"></div>
                         <p>Texto de lazer</p>
                     </div>
-                    <div class="recreationContainer4 mt">
-                        <div class="imageContainer"></div>
+                    <div class="recreationContainer recreationContainer4 mt">
+                        <div class="imageContainer4"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer recreationContainer5 mt">
+                        <div class="imageContainer5"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer recreationContainer6 mt">
+                        <div class="imageContainer6"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer recreationContainer7 mt">
+                        <div class="imageContainer7"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer recreationContainer8 mt">
+                        <div class="imageContainer8"></div>
+                        <p>Texto de lazer</p>
+                    </div>
+                    <div class="recreationContainer recreationContainer9 mt">
+                        <div class="imageContainer9"></div>
                         <p>Texto de lazer</p>
                     </div>
                 </div>
@@ -163,17 +183,72 @@
         </div>
     </section>
 
-    <script
-        src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous">
-    </script>
+    <!-- Plantas do Empreendimento -->
+    <section class="enterprise-planSection">
+        <div class="enterprise-plan">
+            <div class="enterprise-planText">
+                <h1>Plantas do Empreendimento</h1>
+                <span>Studios completos para todo tipo de estilos.</span>
+                <h2>Área de lazer 27º andar (piscina coberta)</h2>  
+                <h2>Área de lazer 5º andar (piscina aberta)</h2>
+                <h2>Studios - 25m² a 31m² -> </h2>  
+            </div>
+            <div class="enterprise-planImage">
+                <img src="/public/img/zoom.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Area Realização -->
+
+    <section class="realizationSection">
+        <div class="realization">
+            <h2>Relização por</h2>
+            <div class="realizationImages">
+                <img src="/public/img/7bImoveis.png" alt="">
+                <img src="/public/img/AAM.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footerContainer">
+            <img src="/public/img/logo.svg" alt="logo sky pinheiros">
+            <div class="addressContainer">
+                <p>Rua Arruda Alvim, nº180,<br> Pinheiros - SP<br>
+                    CEP: 05410-020
+                </p>
+            </div>
+            <div class="formFooterContainer">
+                <form action="form">
+                    <div class="formDiv1">
+                        <input type="name" placeholder="Nome*" required>
+                        <input type="number" placeholder="Telefone*" a required>
+                        <input type="email" placeholder="E-mail*" required>
+                    </div>
+                   <div class="formDiv2">
+                        <input type="text" placeholder="Mensagem" name="texto" id="text">
+                        <div class="formSubmit">
+                            <div class="radioButton">
+                                <input type="radio" name="" id="checkbox" required>
+                                <p>Li e aceito o termo e a <span> Politica de Privacidade.*</span></p>                      
+                            </div>
+                            <input type="submit" value="Enviar" id="submit">
+                        </div>
+                   </div>
+                  
+                </form>
+            </div>
+        </div>
+    </footer>
     <script src="/public/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         const config = {
             type: 'carousel',
-            perView: 2
+            perView: 2,
+            gap: 22,
+            autoplay: 3000 | true
         }
         new Glide('.glide', config).mount()
     </script>

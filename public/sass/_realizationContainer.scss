@@ -1,0 +1,29 @@
+.realizationSection {
+    padding: 2rem;
+    position: relative;
+    height: 665px;
+    .realization {
+        
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        left: 30%;
+        h2 {
+            font-weight: lighter;
+            font-size: 1.55rem;
+            color: #363636;
+            margin-bottom: 1rem;
+        }
+        .realizationImages {
+            width: 635px;
+            
+            display: flex;
+
+            img {
+                width: 50%;
+                margin-left: 5rem;
+            }
+        }
+    }
+}

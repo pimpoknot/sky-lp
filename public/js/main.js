@@ -1,3 +1,4 @@
+
 let button = document.getElementById('btn-form1')
 let checkbox = document.getElementById('checkbox')
 
@@ -9,6 +10,9 @@ function checkboxValidateTrue () {
         button.disabled = false
     }
 }
+
+
+
 
 
 

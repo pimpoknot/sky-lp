@@ -1,0 +1,96 @@
+.footer {
+    background: #333;
+    color: white;
+    height: 660px;
+    position: relative;
+    .footerContainer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+
+        .addressContainer {
+          
+            margin: 0 auto;
+            p {
+                font-size: 1.25rem;
+            }
+        }
+
+        .formFooterContainer {
+            margin: 0 auto;
+            width: 660px;
+            position: relative;
+            input {
+                height: 2.55rem;
+                padding: 0.25rem;
+                 width: 100%;  
+            }
+            form {
+                display: flex;
+                align-items: center;
+                height: 239px;
+                width: 100%;
+                .formDiv1 {         
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    height: 100%;
+                    input + input  {
+                        margin-top: 1rem;     
+                               
+                    }
+
+                }
+
+                .formDiv2 {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 50%;
+                    margin-left: 1rem;
+                    #text {
+                        height: 100%;
+                    }
+                    
+                }
+
+                .radioButton {
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.75rem;
+                    position: relative;
+                    input {
+                        width: 15px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 0.80rem;
+                        margin-left: 0.25rem;
+
+                        span {
+                            color: var(--orange-600);
+                        }
+                    }
+
+                    
+                }
+                #submit {
+                    width: 15%;
+                    margin: 0;
+                    position: absolute;
+                    right: 0;
+                    font-size: 1.2rem;
+                }
+                
+            }
+
+            
+        }
+    }
+}
