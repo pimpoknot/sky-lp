@@ -16,6 +16,6 @@ function checkboxValidateTrue () {
 
 
 
-console.log('validando...')
+
 
 

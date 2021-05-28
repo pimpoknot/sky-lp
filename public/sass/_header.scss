@@ -1,6 +1,6 @@
 .headerContainer {
     height: 90vh;
-    background-image: url('/public/img/background-header.png');
+    background-image: url('./public/img/background-header.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
                 border: none;
                 color: white;
                 font-size: 2rem;
-                background-image: url('/public/img/seta.svg');
+                background-image: url('./public/img/seta.svg');
                 background-repeat: no-repeat;
                 background-size: 40%;
                 background-position: center;

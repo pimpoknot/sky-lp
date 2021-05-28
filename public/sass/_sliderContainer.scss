@@ -57,7 +57,7 @@
                 }
 
                 .btn {
-                    background-image: url('/public/img/seta.svg');
+                    background-image: url('./public/img/seta.svg');
                     background-repeat: no-repeat;
                     background-size: 50%;
                     background-position: center;
@@ -68,7 +68,7 @@
                 }
 
                 .btn1 {
-                    background-image: url('/public/img/seta-back.svg');
+                    background-image: url('./public/img/seta-back.svg');
                 }
         }
 
@@ -85,17 +85,11 @@
                 height: 678px;
                 overflow: hidden;
                 transition: width 2s;
-                background-image: url('/public/img/slider1.svg');   
+                background-image: url('./public/img/slider1.svg');   
                 &:hover {
                     filter: blur(2px);
                     transition: 0.2s ease-in-out;
-                    img {
-                        z-index: 2;
-                        width: 110%;
-                    //    transform: scale(120);
-                        
-                        
-                    }
+                    
                 } 
             }
         }
