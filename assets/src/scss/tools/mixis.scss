@@ -1,0 +1,79 @@
+/**
+ * MEDIA QUERIES
+ */
+
+ @mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+    }
+
+    @if $type == max {
+        $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+        @content;
+    }
+}
+
+
+ @mixin mq-ls {
+    @media (max-width: 320px) { @content; }
+  }
+@mixin mq-sm {
+  @media (max-width: 576px) { @content; }
+  }
+@mixin mq-md {
+  @media (max-width: 768px) { @content; }
+  }
+@mixin mq-lg {
+  @media (max-width: 1024px) { @content; }
+  }
+@mixin mq-x {
+  @media (min-width: 1200px) { @content; }
+  }
+@mixin mq-xl {
+    @media (min-width: 1444px) { @content; }
+    }
+@mixin mq-xxl {
+    @media (min-width: 1980px) { @content; }
+    }
+
+/**
+* ATALHOS 
+*/
+
+@mixin w-h($content) {
+  width: $content;
+  height: $content;
+}
+
+
+/** 
+*  PRE-FIXOS 
+*/
+
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+}
+
+@mixin animation($animation){
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
+
+
+

@@ -1,0 +1,180 @@
+#plantas {
+    padding-top: 5rem;
+
+    .box-container {
+        position: relative;
+
+        .qr_gold-bg {
+            position: absolute;
+            height: 53%;
+            width: 8.6rem;
+            background: var(--green-100);
+            clip-path: polygon(0 25%, 100% 25%, 100% 100%, 0 100%);
+
+
+            &.top {
+                left: -2rem;
+                top: -1rem;
+
+                @include mq('lg', min) {
+                    left: -2rem;
+                }
+
+                @include mq('xs', max) {
+                    top: 3rem;
+                }
+            }
+
+            &.bottom {
+                right: -2rem;
+                bottom: -1.45rem;
+                left: unset;
+                top: unset;
+
+                @include mq('lg', min) {
+                    right: -1rem;
+                }
+
+                @include mq('xs', max) {
+                    right: -.7rem;
+                }
+            }
+
+            @include mq('xs', max) {
+                height: 33%;
+            }
+        }
+
+        &-tab {
+            position: relative;
+            margin-top: 1.5rem;
+
+            &-plantas {
+                position: relative;
+                height: 100%;
+
+                .toleft,
+                .toright {
+                    position: absolute;
+                    bottom: -1.4rem;
+                    right: 3rem;
+                    z-index: 2;
+                    cursor: pointer;
+
+                    background: var(--green-100);
+                    padding: 1rem;
+                    text-align: center;
+
+                    img {
+                        width: 55%;
+                    }
+
+                    @include mq('xs', max) {
+                        padding: .5rem;
+                    }
+                }
+
+                .toleft {
+                    right: 6.8rem;
+
+                    @include mq('xs', max) {
+                        right: 5.7rem;
+                    }
+                }
+
+                .plantas-carousel {
+                    display: flex;
+                    flex-direction: column;
+
+                    .owl-stage-outer {
+                        order: 2;
+                        padding: 2rem 1rem;
+                        border: solid 1px var(--green-100);
+                        background: var(--white);
+                        margin-top: 1.5rem;
+                    }
+
+                    .owl-dots {
+                        order: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        flex-wrap: wrap;
+
+                        .owl-dot {
+                            border: solid 1px var(--black);
+                            margin: 0 .4rem .5rem 0;
+                            border-radius: .5rem;
+                            font-size: .9rem;
+                            color: var(--black);
+                            transition: .3s;
+                            padding: .4rem;
+
+                            &.active,
+                            &:hover {
+                                background-color: var(--green-100);
+                                border: solid 1px var(--green-100);
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+
+                    @include mq('xs', max){
+                        margin-left: 0;
+                    }
+                }
+
+                img {
+                    max-width: 100%;
+
+                    @include mq('xs', max){
+                        max-width: 90%;
+                    }
+                }
+
+                .information {
+                    padding-left: 5rem;
+
+                    .title {
+                        h5 {
+                            font-family: $font-primary-bold;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .description {
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: .8rem;
+
+                            span {
+                                img {
+                                    width: 65%;
+                                }
+                            }
+
+                            p {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    @include mq('xs', max) {
+                        padding-left: 1rem;
+                        padding-top: 1rem;
+                    }
+                }
+            }
+
+            // &::after{
+            //     content: "";
+            //     position: absolute;
+            //     width: 4rem;
+            //     height: 4rem;
+            //     background-color: var(--green-100);
+            //     bottom: 0;
+            //     right: 0;
+            // }
+        }
+    }
+}

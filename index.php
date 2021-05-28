@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="./public/css/glide.core.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Sky</title>
 </head>
@@ -20,11 +21,14 @@
         <!-- Form Header -->
         <div class="formContainer">
             <p>Para mais informações, preencha o formulário abaixo</p>
-            <form action="submit" class="form-js">
-                <input type="name" required name="Nome" placeholder="Nome*">
-                <input type="phone" required name="Telefone*" placeholder="Telefone*" id="phone">
-                <input type="email"required name="email" placeholder="E-mail*">
+            <form action="" id="form-banner">
+
+                <input type="name" name="Nome" class="form-control" id="name" placeholder="Nome*" required>
+                <input type="phone" class="form-control phone" name="Telefone" placeholder="Telefone*" required>
+                <input type="email" name="Email" class="form-control" placeholder="E-mail*" required>
+                <input type="hidden" name="Tipo" class="form-control" value="lateral" required>
                 <button type="submit" id="btn-form1" onclick=""></button>
+
             </form>
             <div class="radioButton">
                 <input type="radio" name="" id="checkbox" required>
@@ -210,6 +214,24 @@
         </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="contato-realizado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <br>
+                    <div class="text-center">
+                        Obrigado!
+                        <br>Em Breve Entraremos em Contato!
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footerContainer">
             <img src="./public/img/logo.svg" alt="logo sky pinheiros">
@@ -219,11 +241,12 @@
                 </p>
             </div>
             <div class="formFooterContainer">
-                <form action="form">
+                <form action="" id="form-contato">
                     <div class="formDiv1">
-                        <input type="name" placeholder="Nome*" required>
-                        <input type="number" placeholder="Telefone*" a required>
-                        <input type="email" placeholder="E-mail*" required>
+                        <input type="text" name="Nome" class="form-control" id="name" placeholder="Nome*" required>
+                        <input type="email" name="Email" class="form-control" placeholder="E-mail*" required>
+                        <input type="text" class="form-control phone" name="Telefone" placeholder="Telefone*" required>
+                        <input type="hidden" name="Tipo" class="form-control" value="lateral" required>
                     </div>
                    <div class="formDiv2">
                         <input type="text" placeholder="Mensagem" name="texto" id="text">
@@ -232,7 +255,7 @@
                                 <input type="radio" name="" id="checkbox" required>
                                 <p>Li e aceito o termo e a <span> Politica de Privacidade.*</span></p>                      
                             </div>
-                            <input type="submit" value="Enviar" id="submit">
+                            <input type="submit" id="btn-form-contato"">
                         </div>
                    </div>
                   
@@ -242,6 +265,11 @@
     </footer>
     <script src="./public/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./assets/dist/js/libary/jquery/jquery.min.js"></script>
+    <script src="./assets/dist/js/libary/bootstrap/bootstrap.min.js"></script>
+
+
+
     <script>
         const config = {
             type: 'carousel',
@@ -252,6 +280,8 @@
         new Glide('.glide', config).mount()
     </script>
 
-  
+    <?php require_once 'import-tags/importJs.php'; ?>
+    <?php require_once 'import-tags/importJsIntegration.php'; ?>
+
 </body>
 </html>

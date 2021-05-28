@@ -1,0 +1,310 @@
+// SETTING
+@import './settings/colors.scss';
+@import './settings/fonts.scss';
+
+// MIXINS 
+@import './tools/mixis.scss';
+
+
+// COMPONENTS
+@import './components/measures.scss';
+
+
+// LIBARY 
+@import './libary/bootstrap/bootstrap.scss';
+@import './libary/telinput/intlTelInput.scss';
+@import './libary/telinput/sprite.scss';
+@import './libary/owlcarousel/owl.carousel.scss';
+@import './libary/owlcarousel/owl.theme.default.scss';
+
+
+// LAYOUTS
+@import './layout/Banner/Banner.scss';
+@import './layout/Empreendimento/empreendimento.scss';
+@import './layout/Imagens/imagens.scss';
+@import './layout/Informacoes/informacoes.scss';
+@import './layout/Localizacao/localizacao.scss';
+@import './layout/Plantas/plantas.scss';
+@import './layout/Recomendacao/recomendacao.scss';
+
+
+body {
+    background-color: var(--white);
+
+    .section-title {
+        font-family: $font-primary-bold;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 5rem;
+            height: 2px;
+            background-color: var(--gold);
+            bottom: -.8rem;
+            left: 38rem;
+
+            @media (max-width: 1366px) {
+                left: 33rem;
+            }
+
+            @include mq('md', max) {
+                left: 27rem;
+            }
+
+            @include mq('sm', max) {
+                left: 19rem;
+            }
+
+            @media (max-width: 425px) {
+                left: 10rem;
+            }
+
+            @media (max-width: 375px) {
+                left: 8rem;
+            }
+
+            @media (max-width: 320px) {
+                left: 7rem;
+            }
+        }
+    }
+
+    .container-form {
+
+        > #form-suspenso {
+            display: flex;
+            position: fixed;
+            top: 30vh;
+            right: 0;
+            z-index: 2;
+            margin-right: -24.7rem;
+            transition: .5s;
+            opacity: 0;
+
+            &.opacity{
+                opacity: 1;
+            }
+
+            @include mq('xl', max){
+                top: 20vh;
+            }
+
+            @include mq('sm', max){
+                top: 11vh;
+                margin-right: -24.7rem;
+            }
+
+            @include mq('xs', max){
+                margin-right: -25.7rem;
+            }
+
+            &.back{
+                margin-right: 0;
+
+                .box-button{
+
+                    .button-form{
+                        @include mq('sm', max){
+                            transform: rotate(-90deg) translate(-11rem, 3.5rem);
+                        }
+                    }
+                }
+            }
+
+            .box-form {
+                width: 100%;
+
+                .button{
+                    position: relative;
+                    p{
+                        position: absolute;
+                        right: 19rem;
+                        top: 41%;
+                        width: 220px;
+                        padding: .8rem;
+                        background-color: var(--green-100);
+                        color: var(--white);
+                        margin-bottom: 0;
+                        text-align: center;
+                        border-top-right-radius: 1rem;
+                        border-top-left-radius: 1rem;
+                        transform: rotate(-90deg) translateX(-11rem);
+                        cursor: pointer;
+
+                        &.exit{
+                            @include mq('xs', max){
+                                display: none;
+                            }
+                        }
+
+                        @include mq('xs', max){
+                            right: 20rem;
+                        }
+                    }
+                }
+
+                .form {
+                    background-color: var(--green-100);
+                    padding: 2rem 2rem 0rem 2rem;
+                    bottom: 20vh;
+                    right: 0;
+                    z-index: 3;
+                    border-top-left-radius: 1rem;
+                    border-bottom-left-radius: 1rem;
+                    transition: .5s;
+
+                    .form-group {
+                        .header {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            p {
+                                margin: 0;
+                            }
+
+                            span {
+                                font-size: 1.2rem;
+                                color: #FFF;
+                                background: rgba(255, 255, 255, 0.4);
+                                padding: 0 .5rem;
+                                cursor: pointer;
+                            }
+                        }
+
+                        >p {
+                            font-family: $font-primary;
+                            font-size: .8rem;
+                            margin-bottom: 0;
+
+                            &:first-child {
+                                font-family: $font-primary-medium;
+                                text-transform: uppercase;
+                                font-size: 1.2rem;
+
+                                @include mq('xs', max) {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+
+                            input {
+                                appearance: unset;
+                                background: var(--white);
+                                border: solid 1px var(--white);
+                                padding: 5px;
+                                border-radius: 5px;
+                                outline: 0 !important;
+
+                                &:checked {
+                                    background: var(--green-100);
+                                }
+                            }
+                        }
+
+                        .inputs {
+                            margin-top: 1rem;
+
+                            input {
+                                margin-bottom: 1.2rem;
+                                height: 51px;
+                                border-radius: 1rem;
+                                background: rgba(255, 255, 255, 0.85);
+
+                                &:focus {
+                                    border-color: var(--white);
+                                    box-shadow: 0 0 2px 0.18rem rgba(255, 255, 255, 0.4)
+                                }
+                            }
+
+                            .iti {
+                                width: 100%;
+
+                                .iti__country-list {
+                                    max-width: 357px;
+                                }
+                            }
+                        }
+
+                        .submit {
+                            display: flex;
+                            justify-content: center;
+                            padding: 1rem .5rem;
+
+                            a {
+                                font-family: $font-primary-medium;
+                                background: var(--white);
+                                color: var(--green-100);
+                                padding: .2rem 1rem;
+                                border-radius: .3rem;
+                                text-decoration: none;
+                                transition: .3s;
+
+                                &:hover {
+                                    filter: brightness(.9);
+                                }
+                            }
+                        }
+                    }
+
+                    @include mq('md', max) {
+                        width: 100%;
+                    }
+
+                    @include mq('xs', max) {
+                        margin-right: 15px;
+                        margin-left: 15px;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 3%;
+        right: 1%;
+        z-index: 3;
+
+        img{
+            @include mq('xs', max){
+                width: 60%;
+            }
+        }
+
+        @include mq('xs', max){
+            right: -4%;
+        }
+    }
+
+    footer {
+        .container {
+            padding: .5rem 0;
+
+            p {
+                margin: 0;
+                text-align: center;
+                font-size: .9rem;
+
+                a {
+                    color: var(--green-100);
+                    font-family: $font-primary-bold;
+                    text-decoration: none;
+                }
+
+                img {
+                    width: 6%;
+
+                    @include mq('sm', max) {
+                        width: 11%;
+                    }
+
+                    @include mq('xs', max) {
+                        width: 14%;
+                    }
+                }
+            }
+        }
+    }
+}

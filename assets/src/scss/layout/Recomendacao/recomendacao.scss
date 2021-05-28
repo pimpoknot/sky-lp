@@ -1,0 +1,146 @@
+#recomendacao {
+    padding-top: 10rem;
+    position: relative;
+
+    .realizacao-bg {
+        position: absolute;
+        height: 23%;
+        width: 42vw;
+        background: var(--green-100);
+        clip-path: polygon(0 25%, 100% 25%, 100% 100%, 0 100%);
+        left: 0;
+        bottom: -.02rem;
+
+        @include mq('xxl', min){
+            width: 43vw;
+        }
+
+        @media (min-width: 2050px){
+            width: 45vw;
+        }
+
+        @include mq('xs', max){
+            height: 17%;
+            width: 88vw;
+            bottom: 24.2rem;
+        }
+
+        @media (max-width: 375px){
+            bottom: 25.8rem;
+        }
+
+        @media (max-width: 320px){
+            bottom: 31.4rem;
+        }
+    }
+
+    .information {
+        .row {
+            border: solid 2px var(--green-100);
+            padding-top: 3rem;
+
+            @include mq('sm', max){
+                margin: 0 .1rem;
+            }
+        }
+    }
+
+    .box {
+        &-image {
+            position: absolute;
+            bottom: -.1rem;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+            }
+
+            @include mq('xs', max){
+                position: relative;
+                margin-bottom: 1.5rem;
+                bottom: 3.7rem;
+            }
+
+            @media (max-width: 414px){
+                bottom: 2.1rem;
+            }
+
+            @media (max-width: 375px){
+                bottom: -.2rem;
+            }
+
+            @media (max-width: 320px){
+                bottom: 3.8rem;
+            }
+        }
+
+        &-container {
+            &-description {
+                .title {
+                    font-size: 1.5rem;
+                    margin-bottom: 2rem;
+                    position: relative;
+                    width: 75%;
+                    line-height: 1.5;
+
+                    span {
+                        font-family: $font-primary-bold;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 5rem;
+                        height: 2.1px;
+                        bottom: -.5rem;
+                        background-color: var(--gold);
+                        left: 0;
+                    }
+
+                    @include mq('xs', max){
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    line-height: 1.9;
+                    font-size: 1.1rem;
+                    width: 75%;
+
+                    @include mq('sm', max){
+                        width: 100%;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            &-logo{
+                a{
+                    text-align: right;
+
+                    img{
+                        width: 70%;
+                        padding-right: 9rem;
+
+                        @include mq('sm', max){
+                            width: 55%;
+                            padding-right: 2rem;
+                        }
+
+                        @include mq('xs', max){
+                            width: 100%;
+                        }
+                    }
+
+                    @include mq('xs', max){
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq('xl', min){
+        padding-top: 16rem;
+    }
+}

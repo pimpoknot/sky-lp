@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'Metropolis Regular';
+    src: url(./../../src/font/metropolis-regular.otf) format('OpenType');
+}
+
+@font-face{
+    font-family: 'Metropolis Medium';
+    font-style: normal;
+    src: url(./../../src/font/metropolis-medium.otf) format('OpenType');
+}
+
+@font-face{
+    font-family: 'Metropolis Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(./../../src/font/metropolis-bold.otf) format('OpenType');
+}
+
+@font-face{
+    font-family: 'Roboto Regular';
+    font-weight: 900;
+    font-style: normal;
+    src: url(./../../src/font/roboto-regular.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Roboto Bold';
+    font-weight: 300;
+    font-style: normal;
+    src: url(./../../src/font/roboto-bold.ttf) format('TrueType');
+}
+
+$font-primary: 'Metropolis Regular';
+$font-primary-medium: 'Metropolis Medium';
+$font-primary-bold: 'Metropolis Bold';
+$font-secondary: 'Roboto Regular';
+$font-secondary-bold: 'Roboto Bold';
+
+
+//CONFIG
+*{
+    font-family: $font-primary;
+}
